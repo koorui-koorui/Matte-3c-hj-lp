@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hur fungerar Pythagoras sats?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hur fungerar Pythagoras sats?</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1. Introduktion</h2>
+            <p>En rätvinklig triangel är en triangel där en av vinklarna är 90 grader. Pythagoras sats används för att beräkna längden på en sida i en sådan triangel.</p>
+        </section>
+        <section>
+            <h2>2. Själva formeln</h2>
+            <p>Formeln är: <strong>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></strong></p>
+            <p>Här är:</p>
+            <ul>
+                <li><strong>a</strong> och <strong>b</strong>: Kateter</li>
+                <li><strong>c</strong>: Hypotenusan</li>
+            </ul>
+        </section>
+        <section>
+            <h2>3. Exempel</h2>
+            <p>Om <strong>a = 3</strong> och <strong>b = 4</strong>, vad är <strong>c</strong>?</p>
+            <p>Steg för steg:</p>
+            <ol>
+                <li>Beräkna a<sup>2</sup> och b<sup>2</sup>: 3<sup>2</sup> = 9, 4<sup>2</sup> = 16</li>
+                <li>Addera resultaten: 9 + 16 = 25</li>
+                <li>Ta roten ur summan: √25 = 5</li>
+            </ol>
+            <p>Alltså är <strong>c = 5</strong>.</p>
+        </section>
+        <section>
+            <h2>4. Visuell förklaring</h2>
+            <div class="triangle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p>De tre kvadraterna representerar areorna av sidorna i triangeln.</p>
+        </section>
+        <section>
+            <h2>5. Varför funkar det?</h2>
+            <p>Arean av kvadraten på hypotenusan är lika med summan av areorna på de två andra sidorna. Detta kan visas med geometriska bevis.</p>
+        </section>
+        <section class="quiz">
+            <h2>6. Quiz</h2>
+            <p>Vad är hypotenusan om <strong>a = 5</strong> och <strong>b = 12</strong>?</p>
+            <input type="text" id="quiz-answer" placeholder="Skriv ditt svar här">
+            <button onclick="checkAnswer()">Kolla svar</button>
+            <p id="feedback"></p>
+        </section>
+        <section>
+            <h2>7. Räkna ut hypotenusan</h2>
+            <p>Fyll i värden för <strong>a</strong> och <strong>b</strong> för att räkna ut hypotenusan:</p>
+            <form id="calculator">
+                <label for="side-a">a:</label>
+                <input type="number" id="side-a" placeholder="Skriv värde för a" required>
+                <label for="side-b">b:</label>
+                <input type="number" id="side-b" placeholder="Skriv värde för b" required>
+                <button type="button" onclick="calculateHypotenuse()">Beräkna</button>
+            </form>
+            <p id="calc-result"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
