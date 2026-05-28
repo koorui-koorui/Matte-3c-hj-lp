@@ -1,96 +1,174 @@
 <!doctype html>
 <html lang="sv">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- Anger teckenkodning så åäö fungerar -->
+    <meta charset="utf-8" />
+    <!-- Gör sidan responsiv på mobila enheter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kurshjälp — Matte 3c</title>
-    <link rel="stylesheet" href="../css-filer/style.css">
-</head>
-<body>
+    <!-- Länk till extern CSS som styr utseende och layout -->
+    <link rel="stylesheet" href="../css-filer/style.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="container">
-            <h1>Kurshjälp — Matte 3c</h1>
-            <nav aria-label="Huvudnavigering">
-                <ul class="main-nav">
-                    <li><a href="huvudsida.html">Startsida</a></li>
-                    <li><a href="kursplan.html">Kursinnehåll</a></li>
-                    <li><a href="mål.html">Mål</a></li>
-                    <li><a href="bedömning.html">Bedömning</a></li>
-                    <li><a href="tips.html">Studietips</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+
+        <h1>Kurshjälp — Matte 3c</h1>
+        <!-- Navigationsmeny; aria-label hjälper skärmläsare -->
+        <nav aria-label="Huvudnavigering">
+          <ul class="main-nav">
+            <!-- Länkar till andra sidor i webbplatsen -->
+            <li><a href="huvudsida.html">Startsida</a></li>
+            <li><a href="kursplan.html">Kursinnehåll</a></li>
+            <li><a href="mål.html">Mål</a></li>
+            <li><a href="bedömning.html">Bedömning</a></li>
+            <li><a href="tips.html">Studietips</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
+    <!-- Huvudinnehåll -->
     <main class="container">
-        <section class="hero">
-            <h2>Vad är detta?</h2>
-            <p>Denna sida är en snabb kurshjälp för Matte 3c — korta förklaringar, nyckelidéer, exempel och övningar för att förstå kursens huvudämnen.</p>
-        </section>
+      <section class="hero">
+        <h2>Vad är detta?</h2>
+        <p>
+          Denna sida är en snabb kurshjälp för Matte 3c — korta förklaringar,
+          nyckelidéer, exempel och övningar för att förstå kursens huvudämnen.
+        </p>
+      </section>
+      <section>
+        <h2>Derivata (analys)</h2>
+        <p>
+          Nyckelidé: derivatan är gränsvärdet av ändringskvoten och beskriver
+          lutningen i en punkt.
+        </p>
+        <ul>
+          <li>
+            Begrepp: sekant (medeländring), tangent (momentan lutning),
+            ändringskvot.
+          </li>
+          <li>
+            Regler: potensregel d(x^n)=n·x^(n-1), d(e^x)=e^x, produkt-/kvot- och
+            kedjeregel.
+          </li>
+          <li>
+            Användning: hitta extrempunkter med första- och andraderivatans
+            tecken.
+          </li>
+          <li>
+            Snabbövning: derivera f(x)=x^3−3x^2+2 och bestäm lokala
+            extrempunkter.
+          </li>
+        </ul>
+      </section>
 
-        <section>
-            <h2>Derivata (analys)</h2>
-            <p>Nyckelidé: derivatan är gränsvärdet av ändringskvoten och beskriver lutningen i en punkt.</p>
-            <ul>
-                <li>Begrepp: sekant (medeländring), tangent (momentan lutning), ändringskvot.</li>
-                <li>Regler: potensregel d(x^n)=n·x^(n-1), d(e^x)=e^x, produkt-/kvot- och kedjeregel.</li>
-                <li>Användning: hitta extrempunkter med första- och andraderivatans tecken.</li>
-                <li>Snabbövning: derivera f(x)=x^3−3x^2+2 och bestäm lokala extrempunkter.</li>
-            </ul>
-        </section>
 
-        <section>
-            <h2>Integraler</h2>
-            <p>Nyckelidé: integralen är summan (area) under en kurva; primitiv funktion är inverse till derivata.</p>
-            <ul>
-                <li>Grund: hitta F så att F'(x)=f(x). Bestämd integral ger area mellan x‑gränser.</li>
-                <li>Regler: integrera potenser, använd substitutionsmetod för enklare uttryck.</li>
-                <li>Snabbövning: hitta primitiv till f(x)=3x^2 och beräkna arean mellan x=0 och x=2.</li>
-            </ul>
-        </section>
+      <section>
+        <h2>Integraler</h2>
+        <p>
+          Nyckelidé: integralen är summan (area) under en kurva; primitiv
+          funktion är inverse till derivata.
+        </p>
+        <ul>
+          <li>
+            Grund: hitta F så att F'(x)=f(x). Bestämd integral ger area mellan
+            x‑gränser.
+          </li>
+          <li>
+            Regler: integrera potenser, använd substitutionsmetod för enklare
+            uttryck.
+          </li>
+          <li>
+            Snabbövning: hitta primitiv till f(x)=3x^2 och beräkna arean mellan
+            x=0 och x=2.
+          </li>
+        </ul>
+      </section>
 
-        <section>
-            <h2>Algebra och funktioner</h2>
-            <p>Nyckelidé: hantera polynom och rationella uttryck, studera gränsvärden och kontinuitet.</p>
-            <ul>
-                <li>Metoder: polynomdivision för att förenkla rationella uttryck, faktorisering för nollställen.</li>
-                <li>Absolutbelopp: lös ekvationer genom falluppdelning (positivt/negativt).</li>
-                <li>Snabbövning: dela (x^3+2x^2−x−2) med (x−1) och hitta resten/nollställen.</li>
-            </ul>
-        </section>
+      <section>
+        <h2>Algebra och funktioner</h2>
+        <p>
+          Nyckelidé: hantera polynom och rationella uttryck, studera gränsvärden
+          och kontinuitet.
+        </p>
+        <ul>
+          <li>
+            Metoder: polynomdivision för att förenkla rationella uttryck,
+            faktorisering för nollställen.
+          </li>
+          <li>
+            Absolutbelopp: lös ekvationer genom falluppdelning
+            (positivt/negativt).
+          </li>
+          <li>
+            Snabbövning: dela (x^3+2x^2−x−2) med (x−1) och hitta
+            resten/nollställen.
+          </li>
+        </ul>
+      </section>
 
-        <section>
-            <h2>Geometri & Trigonometri</h2>
-            <p>Nyckelidé: trigonometriska samband och formler löser trianglar och beskriver vågor och periodiska funktioner.</p>
-            <ul>
-                <li>Viktigt: enhetscirkeln, sinus och cosinus, sinus- och cosinussatsen.</li>
-                <li>Användning: beräkna sidor/vinklar i trianglar, kombinera trig och analys för funktioner.</li>
-                <li>Snabbövning: i en triangel med sidor 7 och 10 och inkl. vinkel 50°, hitta tredje sidan med cosinussatsen.</li>
-            </ul>
-        </section>
+      <section>
+        <h2>Geometri & Trigonometri</h2>
+        <p>
+          Nyckelidé: trigonometriska samband och formler löser trianglar och
+          beskriver vågor och periodiska funktioner.
+        </p>
+        <ul>
+          <li>
+            Viktigt: enhetscirkeln, sinus och cosinus, sinus- och cosinussatsen.
+          </li>
+          <li>
+            Användning: beräkna sidor/vinklar i trianglar, kombinera trig och
+            analys för funktioner.
+          </li>
+          <li>
+            Snabbövning: i en triangel med sidor 7 och 10 och inkl. vinkel 50°,
+            hitta tredje sidan med cosinussatsen.
+          </li>
+        </ul>
+      </section>
 
-        <section>
-            <h2>Komplexa tal (kort)</h2>
-            <p>Nyckelidé: hantera tal i formen a+bi, använd polär form för multiplikation och rötter.</p>
-            <ul>
-                <li>Öva: addera, multiplicera och beräkna absolutvärde. Skriv komplexa tal i rekt. och polär form.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Digitala verktyg</h2>
-            <p>Nyckelidé: GeoGebra och grafritande räknare hjälper visualisera funktioner, tangenter, sekantlinjer och integraler.</p>
-            <ul>
-                <li>Tips: rita f(x) och använd tangentverktyg för att kontrollera derivatan numeriskt.</li>
-                <li>Övning: jämför numerisk derivata (sekant) med analytisk derivata i en punkt.</li>
-            </ul>
-        </section>
+      <section>
+        <h2>Komplexa tal (kort)</h2>
+        <p>
+          Nyckelidé: hantera tal i formen a+bi, använd polär form för
+          multiplikation och rötter.
+        </p>
+        <ul>
+          <li>
+            Öva: addera, multiplicera och beräkna absolutvärde. Skriv komplexa
+            tal i rekt. och polär form.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Digitala verktyg</h2>
+        <p>
+          Nyckelidé: GeoGebra och grafritande räknare hjälper visualisera
+          funktioner, tangenter, sekantlinjer och integraler.
+        </p>
+        <ul>
+          <li>
+            Tips: rita f(x) och använd tangentverktyg för att kontrollera
+            derivatan numeriskt.
+          </li>
+          <li>
+            Övning: jämför numerisk derivata (sekant) med analytisk derivata i
+            en punkt.
+          </li>
+        </ul>
+      </section>
     </main>
 
+    <!-- Sidfot: visar årtal som JS ska fylla i -->
     <footer class="site-footer">
-        <div class="container"><p>© <span id="year"></span> Matte 3c</p></div>
+      <div class="container">
+        <p>© <span id="year"></span> Matte 3c</p>
+      </div>
     </footer>
 
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
+    <!-- Laddar extern JS som sätter årtalet; OBS: mappnamnet innehåller ett mellanslag -->
+    <script src="../java%20script/javascript.js"></script>
+  </body>
 </html>

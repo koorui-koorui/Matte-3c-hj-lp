@@ -1,238 +1,247 @@
+/* Globalt: box-modell och grundstil */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Segoe UI", Roboto, Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f6fb;
-    color: #222;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6fb;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Container */
+/* Behållare: centrerar och begränsar maxbredd */
 .container {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 1rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-/* Header */
+/* Sidhuvud: bakgrundsfärg, textfärg och skugga */
 .site-header {
-    background: linear-gradient(180deg,#007acc 0%, #006bb3 100%);
-    color: #fff;
-    padding: 1rem 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  background: linear-gradient(180deg, #007acc 0%, #006bb3 100%);
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 .site-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 .site-title {
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 600;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
-/* Navigation */
+/* Navigering: horisontell lista utan standardpunkt */
 .main-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 .main-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.45rem 0.75rem;
-    border-radius: 6px;
-    display: inline-block;
-    transition: background .15s, transform .08s;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  display: inline-block;
+  transition:
 }
 .main-nav a:hover,
 .main-nav a:focus {
-    background: rgba(255,255,255,0.12);
-    transform: translateY(-2px);
-    outline: none;
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+  outline: none;
 }
 
-/* Main content */
+/* Huvudinnehåll: padding ovanför/under innehållet */
 main.container {
-    padding-top: 1.5rem;
-    padding-bottom: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 
-/* Headings */
-h1, h2, h3 {
-    color: #003b5c;
-    margin-top: 0;
+/* Rubriker: färg och borttag av extra toppmarginal */
+h1,
+h2,
+h3 {
+  color: #003b5c;
+  margin-top: 0;
 }
 
-/* Hero */
+/* Hero-sektion: ljus bakgrund, ram och skugga */
 .hero {
-    background: linear-gradient(90deg, #ffffff 0%, #eef8ff 100%);
-    border: 1px solid #d7ecff;
-    padding: 1.25rem;
-    border-radius: 10px;
-    margin-bottom: 1.25rem;
-    box-shadow: 0 1px 4px rgba(16,24,40,0.03);
+  background: linear-gradient(90deg, #ffffff 0%, #eef8ff 100%);
+  border: 1px solid #d7ecff;
+  padding: 1.25rem;
+  border-radius: 10px;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 4px rgba(16, 24, 40, 0.03);
 }
 #search-form {
-    display: flex;
-    gap: .5rem;
-    margin-top: .75rem;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
 }
 #search-form input[type="search"] {
-    flex: 1;
-    padding: .5rem .75rem;
-    border: 1px solid #cfe9ff;
-    border-radius: 8px;
-    background: #fff;
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cfe9ff;
+  border-radius: 8px;
+  background: #fff;
 }
 #search-form button {
-    background: #007acc;
-    color: #fff;
-    border: none;
-    padding: .5rem .8rem;
-    border-radius: 8px;
-    cursor: pointer;
+  background: #007acc;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
 }
-#search-form button:hover { background: #006bb3; }
+#search-form button:hover {
+  background: #006bb3;
+}
 
-/* Sections and lists */
+/* Sektioner och listor: mellanrum mellan block */
 section {
-    margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 .topic-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
-    gap: .6rem;
-    padding: 0;
-    list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.6rem;
+  padding: 0;
+  list-style: none;
 }
 .topic-list a {
-    display: block;
-    background: #fff;
-    padding: .6rem .8rem;
-    border-radius: 8px;
-    border: 1px solid #e6f3ff;
-    color: #004b6d;
-    text-decoration: none;
-    transition: transform .12s, box-shadow .12s;
+  display: block;
+  background: #fff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #e6f3ff;
+  color: #004b6d;
+  text-decoration: none;
+  transition:
+    transform 0.12s,
+    box-shadow 0.12s;
 }
 .topic-list a:hover,
 .topic-list a:focus {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(3,64,120,0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(3, 64, 120, 0.08);
 }
 
-/* Tools and cards */
+/* Verktyg och kort: grid-layout och kortdesign */
 .tools {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: .75rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
 }
 .tool {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 1px solid #e6f3ff;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #e6f3ff;
 }
-.tool h3 { margin-top: 0; }
+.tool h3 {
+  margin-top: 0;
+}
 .tool form {
-    display: flex;
-    gap: .5rem;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+/* Inmatningsfält (verktyg och quiz): padding, kant och bredd */
 .tool input[type="number"],
 .quiz input[type="text"],
 #quiz-answer {
-    padding: .45rem .6rem;
-    border: 1px solid #cfe9ff;
-    border-radius: 6px;
-    width: 120px;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #cfe9ff;
+  border-radius: 6px;
+  width: 120px;
 }
 .tool button,
 .quiz button {
-    background: #007acc;
-    color: #fff;
-    border: none;
-    padding: .5rem .7rem;
-    border-radius: 8px;
-    cursor: pointer;
+  background: #007acc;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
 }
 .tool button:hover,
-.quiz button:hover { background: #006bb3; }
-
-/* Quiz */
-.quiz {
-    margin-top: 1rem;
-    padding: 1rem;
-    background: linear-gradient(180deg,#eaf7ff,#ffffff);
-    border: 1px solid #cfe9ff;
-    border-radius: 10px;
+.quiz button:hover {
+  background: #006bb3;
 }
+
+/* Feedback och beräkningsresultat: framhävning */
 #feedback,
 #calc-result {
-    margin-top: .6rem;
-    font-weight: 600;
+  margin-top: 0.6rem;
+  font-weight: 600;
 }
 
-/* Footer */
+/* Sidfot: bakgrundsfärg och centrerad text */
 .site-footer {
-    background: #fafbfd;
-    padding: 1rem 0;
-    border-top: 1px solid #eef6ff;
-    margin-top: 2rem;
+  background: #fafbfd;
+  padding: 1rem 0;
+  border-top: 1px solid #eef6ff;
+  margin-top: 2rem;
 }
 .site-footer p {
-    margin: 0;
-    text-align: center;
-    color: #6b7785;
+  margin: 0;
+  text-align: center;
+  color: #6b7785;
 }
 
-/* Small decorative triangle section (if used) */
+/* Dekorativ triangelsektion (valfri) */
 .triangle {
-    display: flex;
-    justify-content: center;
-    gap: .5rem;
-    margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
 }
 
-/* Accessibility focus */
-a:focus, button:focus, input:focus {
-    outline: 3px solid rgba(0,122,204,0.18);
-    outline-offset: 2px;
+/* Tillgänglighet: tydlig outline vid fokus */
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid rgba(0, 122, 204, 0.18);
+  outline-offset: 2px;
 }
 
-/* Responsive */
+/* Responsiv: bredare layoutinställningar för större skärmar */
 @media (min-width: 720px) {
-    .tools {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    #search-form input[type="search"] {
-        max-width: 520px;
-    }
+  .tools {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #search-form input[type="search"] {
+    max-width: 520px;
+  }
 }
+/* Mobil: justeringar för små skärmar */
 @media (max-width: 560px) {
-    .site-header .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .main-nav {
-        width: 100%;
-        justify-content: flex-start;
-    }
-    .topic-list {
-        grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
-    }
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .topic-list {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
 }

@@ -1,38 +1,48 @@
 <!doctype html>
 <html lang="sv">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- Anger teckenkodning så åäö fungerar -->
+    <meta charset="utf-8" />
+    <!-- Gör sidan responsiv på mobila enheter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Studietips — Matte 3c</title>
-    <link rel="stylesheet" href="../css-filer/style.css">
-</head>
-<body>
+    <!-- Länk till gemensam CSS som styr utseende och layout -->
+    <link rel="stylesheet" href="../css-filer/style.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="container">
-            <h1>Studietips — Matte 3c</h1>
-            <nav aria-label="Huvudnavigering">
-                <ul class="main-nav">
-                    <li><a href="huvudsida.html">Startsida</a></li>
-                    <li><a href="mattehjälp.html">matte hjälp</a></li>
-                    <li><a href="kursplan.html">Kursinnehåll</a></li>
-                    <li><a href="mål.html">Mål</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <h1>Studietips — Matte 3c</h1>
+        <nav aria-label="Huvudnavigering">
+          <ul class="main-nav">
+            <!-- Länkar till övriga sidor på webbplatsen -->
+            <li><a href="huvudsida.html">Startsida</a></li>
+            <li><a href="mattehjälp.html">matte hjälp</a></li>
+            <li><a href="kursplan.html">Kursinnehåll</a></li>
+            <li><a href="mål.html">Mål</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
+    <!-- Huvudinnehåll -->
     <main class="container">
-        <h2>Studietips</h2>
-        <ul>
-            <li>Öva regelbundet och variera uppgiftstyper.</li>
-            <li>Använd GeoGebra eller grafritande räknare för att visualisera.</li>
-            <li>Jobba i grupp och förklara lösningar för varandra.</li>
-        </ul>
+      <h2>Studietips</h2>
+      <ul>
+        <li>Öva regelbundet och variera uppgiftstyper.</li>
+        <li>Använd GeoGebra eller grafritande räknare för att visualisera.</li>
+        <li>Jobba i grupp och förklara lösningar för varandra.</li>
+      </ul>
     </main>
 
+    <!-- Sidfot: visar årtal som scriptet fyller i -->
     <footer class="site-footer">
-        <div class="container"><p>© <span id="year"></span> Matte 3c</p></div>
+      <div class="container">
+        <p>© <span id="year"></span> Matte 3c</p>
+      </div>
     </footer>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
+
+    <!-- Laddar extern JS som sätter årtalet; OBS: mappnamnet innehåller ett mellanslag -->
+    <script src="../java%20script/javascript.js"></script>
+  </body>
 </html>
