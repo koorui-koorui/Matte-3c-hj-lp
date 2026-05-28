@@ -117,6 +117,16 @@
           lärarens övningsmaterial.
         </p>
       </section>
+  <!-- Java script för en xss säker inmatning -->
+      <section id="safe-form">
+        <h2>Säker inmatning</h2>
+        <form id="secureForm">
+          <label for="userInput">Skriv något:</label>
+          <input type="text" id="userInput" required />
+          <button type="submit">Visa</button>
+        </form>
+        <p id="formResult"></p>
+      </section>
     </main>
 
     <!-- Sidfot: visar årtal i en span med id="year" som ska fyllas av JS -->
